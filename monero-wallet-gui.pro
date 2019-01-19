@@ -283,7 +283,6 @@ linux {
         QMAKE_LFLAGS += -static-libgcc -static-libstdc++
    #     contains(QT_ARCH, x86_64) {
             LIBS+= -lunbound \
-                   -lusb-1.0 \
                    -lhidapi-hidraw \
                    -ludev
    #     }
@@ -305,6 +304,7 @@ linux {
         -llmdb \
         -lsodium \
         -lhidapi-libusb \
+        -lusb-1.0 \
         -lcrypto $$TREZOR_LINKER
 
     if(!android) {
