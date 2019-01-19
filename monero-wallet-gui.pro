@@ -305,6 +305,7 @@ linux {
         -lsodium \
         -lhidapi-libusb \
         -lusb-1.0 \
+        -lprotobuf \
         -lcrypto $$TREZOR_LINKER
 
     if(!android) {
